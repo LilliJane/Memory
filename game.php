@@ -45,7 +45,7 @@
 			$result = $link->query('SELECT nom FROM memory_genre WHERE id = ' . $rand_genre['id']);
 			$genre_name = $result->fetch_assoc();
 
-			$result = $link->query('SELECT * FROM memory_cards WHERE type = ' . $rand_type['type'] . ' AND genre = ' . $rand_genre['id']);
+			$result = $link->query('SELECT * FROM memory_cards WHERE type = ' . $rand_type['type'] . ' AND genre = ' . $rand_genre['id'] . ' AND level <= ' . $_POST['level']);
 			$game = $result->fetch_assoc();
 
 			$count = $result->num_rows;
