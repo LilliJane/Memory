@@ -13,10 +13,11 @@
 	    		<label for="level">Niveau : </label>
     		 	<select name="level" id="level">
         			<option value="1">Maternelle</option>
-           			<option value="2">CE1</option>
-           			<option value="3">CE2</option>
-           			<option value="4">CM1</option>
-           			<option value="5">CM2</option>
+					<option value="2">CP</option>
+					<option value="3">CE1</option>
+					<option value="4">CE2</option>
+					<option value="5">CM1</option>
+					<option value="6">CM2</option>
        			</select>
     		</div>
     		<br /><br />
