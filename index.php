@@ -1,20 +1,8 @@
-﻿<?php include "connect.php";
+﻿<center>
 
-// On démarre la session AVANT d'écrire du code HTML
-session_start();
+  <h3>Choisissez votre mode de jeu :</h3>
 
-?>
+  <form method="post" action="game.php"><input type="submit" value="Partie Rapide" /><br /><br /></form>
+  <form method="post" action="admin.php"><input type="submit" value="Professeur" /><br /><br /></form>
 
-
-<?php
-
-	$result = $link->query('SELECT * FROM memory_cards ');
-
-	while ($row = $result->fetch_assoc())
-	{
-		echo '<p><strong>' . htmlspecialchars($row['carte_a']) . '</strong> : ' . htmlspecialchars($row['carte_b']) . '</p>';
-	}
-
-?>
-</body>
-</html>
+</center>
