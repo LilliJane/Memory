@@ -1,16 +1,14 @@
-﻿<h1>Memory game project, Hi !</h1>
-
-<!--head>
-<link rel="stylesheet" type="text/css" href="test.css">
-</head-->
-
-<meta http-equiv="content-type"
-  content="text/html; charset=ISO-8859-1">
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+	</head>
+<body>
 
    <hgroup>
     <h1>Nouvelle Partie</h1>
   </hgroup>
-  <form action="cible.php">
+  <form action="perso.php" method="post">
     <div class="group">
        <label for="theme">Quel thème souhaitez-vous utiliser ?</label><br />
        <select name="theme" id="theme">
@@ -31,11 +29,11 @@
     <div class="group">
       <p>
        Veuillez indiquer le nombre de cartes souhaité :<br />
-        <input type="radio" name="nb_cards"  value="8cartes" id="8cartes" /> <label for="8cartes">8 cartes</label><br />
-        <input type="radio" name="nb_cards" value="12cartes" id="12cartes" /> <label for="12cartes">12 cartes</label><br />
-        <input type="radio" name="nb_cards" value="16cartes" id="16cartes" /> <label for="16cartes">16 cartes</label><br />
-        <input type="radio" name="nb_cards" value="16cartes" id="20cartes" /> <label for="20cartes">20 cartes</label><br />
-        <input type="radio" name="nb_cards" value="20cartes" id="24cartes" /> <label for="24cartes">24 cartes</label>
+        <input type="radio" name="nb_cards"  value="8" id="8" /> <label for="8">8 cartes</label><br />
+        <input type="radio" name="nb_cards" value="12" id="12" /> <label for="12">12 cartes</label><br />
+        <input type="radio" name="nb_cards" value="16" id="16" /> <label for="16">16 cartes</label><br />
+        <input type="radio" name="nb_cards" value="20" id="20" /> <label for="20">20 cartes</label><br />
+        <input type="radio" name="nb_cards" value="24" id="24" /> <label for="24">24 cartes</label>
       </p>
     </div>
     <div class="group">
@@ -76,4 +74,3 @@
      <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
     </button>
   </form>
-</meta>

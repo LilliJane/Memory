@@ -1,15 +1,14 @@
-<?php include "connect.php"; ?>
+﻿<?php include "connect.php";
 
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-	</head>
-<body>
+// On démarre la session AVANT d'écrire du code HTML
+session_start();
+
+?>
+
 
 <?php
 
-	$result = $link->query('SELECT * FROM memory_cards');
+	$result = $link->query('SELECT * FROM memory_cards ');
 
 	while ($row = $result->fetch_assoc())
 	{
