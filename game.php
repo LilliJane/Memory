@@ -1,4 +1,4 @@
-<?php include ("connect.php"); ?>
+﻿<?php include ("connect.php"); ?>
 
 <center>
 
@@ -26,24 +26,56 @@
 	}
 	else
 	{
+
 		?>
-			<h1>LE JEU DE <font color="FF0000"><?php echo $_POST['level'] ?></font> COMMENCE</h1>
-			<br /><br />
+		<h1>LE JEU COMMENCE</h1>
+		<br />
+
 		<?php
-		$row = $link->query('SELECT id FROM genre ORDER BY RAND() LIMIT 1');
-		while ($rand_genre = mysql_fetch_array($row)) {
-			echo $rand_genre[0];
-		}
-		/*
+			$result = $link->query('SELECT nom FROM memory_level WHERE id = ' . $_POST['level']);
+			$level_name = $result->fetch_assoc();
 
-		$rand_type = $link->query('SELECT DISTINCT(type) FROM memory_cards ORDER BY RAND() LIMIT 1');
+			$result = $link->query('SELECT id FROM memory_genre ORDER BY RAND() LIMIT 1');
+			$rand_genre = $result->fetch_assoc();
 
-		$result = $link->query('SELECT carte_a, carte_b FROM memory_cards WHERE niveau = ' . $_POST['level'] . ' AND genre = ' . $rand_genre['classtype'] . ' AND type = ' . $rand_type['classtype']);
-		/*while ($row = $result->fetch_assoc())
-		{
-			echo '<p><strong>' . htmlspecialchars($row['carte_a']) . '</strong> : ' . htmlspecialchars($row['carte_b']) . '</p>';
-		}*/
+			$result = $link->query('SELECT type FROM memory_cards ORDER BY RAND() LIMIT 1');
+			$rand_type = $result->fetch_assoc();
 
+			$result = $link->query('SELECT nom FROM memory_genre WHERE id = ' . $rand_genre['id']);
+			$genre_name = $result->fetch_assoc();
+
+			$result = $link->query('SELECT * FROM memory_cards WHERE type = ' . $rand_type['type'] . ' AND genre = ' . $rand_genre['id']);
+			$game = $result->fetch_assoc();
+
+			$count = $result->num_rows;
+		?>
+
+		<h4>
+			Niveau sélectionné :  <font color="FF0000"><?php echo $level_name['nom'] ?></font><br />
+			Thème abordé : <font color="FF0000"><?php echo $genre_name['nom']; ?></font>
+		</h4>
+		
+		<table border="1" class="table">
+			<tr>
+				<th>Carte A</th>
+				<th>Carte B</th>
+			</tr>
+				<?php
+					if ($count == 0)
+						echo 'Aucun résultat trouvé.<br /><br />';
+					while ($count > 0)
+					{	
+						echo '<tr>';
+						echo '<td>' . $game['carte_a'] . '</td>';
+						echo '<td>' . $game['carte_b'] . '</td>';
+						echo '</tr>';
+
+						$game = $result->fetch_assoc();
+						$count = $count - 1;
+					}
+				?>
+		</table>
+		<?php
 	}
 ?>
 
