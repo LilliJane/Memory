@@ -1,4 +1,6 @@
-﻿<center>
+﻿<title id="title-doc">Memory Game</title>
+
+<center>
 
   <h3>Choisissez votre mode de jeu :</h3>
 

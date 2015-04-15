@@ -1,4 +1,6 @@
-﻿<?php include ("connect.php"); ?>
+﻿<title id="title-doc">Memory Game</title>
+
+<?php include ("connect.php"); ?>
 
 <center>
 

@@ -1,4 +1,6 @@
-﻿<?php
+﻿<title id="title-doc">Memory Game</title>
+
+<?php
 
 if ($_POST['theme'])
 	$_SESSION['theme'] = $_POST['theme'];
@@ -10,6 +12,21 @@ if ($_POST['name'])
 else
 	$_SESSION['name'] = "Memory";
 
+if ($_POST['level'])
+	$_SESSION['level'] = $_POST['level'];
+else
+	$_SESSION['level'] = "maternelle";
+
+if ($_POST['consigne'])
+	$_SESSION['consigne'] = $_POST['consigne'];
+else
+	$_SESSION['consigne'] = "Retrouve les deux cartes correspondantes !";
+
+if ($_POST['nb_level'])
+	$_SESSION['nb_level'] = $_POST['nb_level'];
+else
+	$_SESSION['nb_level'] = 1;
+
 if ($_POST['time'])
 	$_SESSION['time'] = $_POST['time'];
 else
@@ -20,15 +37,11 @@ if ($_POST['essai'])
 else
 	$_SESSION['essai'] = 100;
 
-if (isset($_POST['nb_cards']))
+/*if (isset($_POST['nb_cards']))
 	$_SESSION['nb_cards'] = $_POST['nb_cards'];
 else
-	$_SESSION['nb_cards'] =  "16";
+	$_SESSION['nb_cards'] =  "16"; */
 
-if ($_POST['consigne'])
-	$_SESSION['consigne'] = $_POST['consigne'];
-else
-	$_SESSION['consigne'] = "Retrouve les deux cartes correspondantes !";
 
 if (isset($_POST['multi']))
 	$_SESSION['multi'] = $_POST['multi'];
@@ -40,18 +53,52 @@ if (isset($_POST['score']))
 else
 	$_SESSION['score'] = 0;
 
-if ($_POST['level'])
-	$_SESSION['level'] = $_POST['level'];
+if (isset($_POST['type_end1']))
+	$_SESSION['type_end1'] = $_POST['type_end1'];
 else
-	$_SESSION['level'] = "maternelle";
+	$_SESSION['type_end1'] = 0;
 
-if ($_POST['nb_level'])
-	$_SESSION['nb_level'] = $_POST['nb_level'];
+if (isset($_POST['type_end2']))
+	$_SESSION['type_end2'] = $_POST['type_end2'];
 else
-	$_SESSION['nb_level'] = 1;
+	$_SESSION['type_end2'] = 0;
+
+if (isset($_POST['type_end3']))
+	$_SESSION['type_end3'] = $_POST['type_end3'];
+else
+	$_SESSION['type_end3'] = 0;
+
 ?>
  
 
 <p>Bonjour !</p>
-
+ 
 <?php echo $_SESSION['theme']; ?>
+
+<form action="game_perso.php" method="post">
+	<div class="group">
+	  <p>
+	  Couleurs:
+	  	<input type="radio" name="color" value="" id="1" /> <label for="1"></label>
+	  	<input type="radio" name="color" value="" id="2" /> <label for="1"></label>
+	  	<input type="radio" name="color" value="" id="3" /> <label for="1"></label>
+	  	<input type="radio" name="color" value="" id="4" /> <label for="1"></label>
+	  	<input type="radio" name="color" value="" id="5" /> <label for="1"></label>
+	  	<input type="radio" name="color" value="" id="6" /> <label for="1"></label>
+	  </p>
+	</div>
+	<div class="group">
+	  <p>
+	    Type de cartes:
+	    	<input
+    <div class="group">
+      <p>
+       Nombre de cartes affichées :<br />heme forest
+        <input type="radio" name="nb_cards"  value="8" id="8" /> <label for="8">8 cartes</label>
+        <input type="radio" name="nb_cards" value="12" id="12" /> <label for="12">12 cartes</label>
+        <input type="radio" name="nb_cards" value="16" id="16" /> <label for="16">16 cartes</label>
+        <input type="radio" name="nb_cards" value="20" id="20" /> <label for="20">20 cartes</label>
+        <input type="radio" name="nb_cards" value="24" id="24" /> <label for="24">24 cartes</label>
+      </p>
+    </div>
+</form>
