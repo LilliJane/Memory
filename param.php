@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8" />
 	</head>
+
+  <title id="title-doc">Memory Game</title>
+
 <body>
 
    <hgroup>
@@ -40,16 +43,6 @@
       <input type="text" name="consigne"><span class="highlight"></span><span class="bar"></span>
       <label>Consigne</label>
     </div>
-    <!--div class="group">
-      <p>
-       Veuillez indiquer le nombre de cartes souhaité :<br />
-        <input type="radio" name="nb_cards"  value="8" id="8" /> <label for="8">8 cartes</label><br />
-        <input type="radio" name="nb_cards" value="12" id="12" /> <label for="12">12 cartes</label><br />
-        <input type="radio" name="nb_cards" value="16" id="16" /> <label for="16">16 cartes</label><br />
-        <input type="radio" name="nb_cards" value="20" id="20" /> <label for="20">20 cartes</label><br />
-        <input type="radio" name="nb_cards" value="24" id="24" /> <label for="24">24 cartes</label>
-      </p>
-    </div-->
     <div class="group">
       <input type="text" name="time"><span class="highlight"></span><span class="bar"></span>
       <label>Durée du niveau</label>
@@ -80,5 +73,9 @@
     </div>
     <button type="submit" class="button buttonBlue">Suivant
      <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+    </button>
+  </form>
+  <form action="game.php" method="post">
+    <button type="submit" name="game">Jouer
     </button>
   </form>

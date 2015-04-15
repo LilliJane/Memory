@@ -1,4 +1,6 @@
-﻿<?php
+﻿<title id="title-doc">Memory Game</title>
+
+<?php
 
 if ($_POST['theme'])
 	$_SESSION['theme'] = $_POST['theme'];
@@ -70,16 +72,33 @@ else
  
 
 <p>Bonjour !</p>
-
+ 
 <?php echo $_SESSION['theme']; ?>
 
-    <!--div class="group">
+<form action="game_perso.php" method="post">
+	<div class="group">
+	  <p>
+	  Couleurs:
+	  	<input type="radio" name="color" value="" id="1" /> <label for="1"></label>
+	  	<input type="radio" name="color" value="" id="2" /> <label for="1"></label>
+	  	<input type="radio" name="color" value="" id="3" /> <label for="1"></label>
+	  	<input type="radio" name="color" value="" id="4" /> <label for="1"></label>
+	  	<input type="radio" name="color" value="" id="5" /> <label for="1"></label>
+	  	<input type="radio" name="color" value="" id="6" /> <label for="1"></label>
+	  </p>
+	</div>
+	<div class="group">
+	  <p>
+	    Type de cartes:
+	    	<input
+    <div class="group">
       <p>
-       Veuillez indiquer le nombre de cartes souhaité :<br />
-        <input type="radio" name="nb_cards"  value="8" id="8" /> <label for="8">8 cartes</label><br />
-        <input type="radio" name="nb_cards" value="12" id="12" /> <label for="12">12 cartes</label><br />
-        <input type="radio" name="nb_cards" value="16" id="16" /> <label for="16">16 cartes</label><br />
-        <input type="radio" name="nb_cards" value="20" id="20" /> <label for="20">20 cartes</label><br />
+       Nombre de cartes affichées :<br />heme forest
+        <input type="radio" name="nb_cards"  value="8" id="8" /> <label for="8">8 cartes</label>
+        <input type="radio" name="nb_cards" value="12" id="12" /> <label for="12">12 cartes</label>
+        <input type="radio" name="nb_cards" value="16" id="16" /> <label for="16">16 cartes</label>
+        <input type="radio" name="nb_cards" value="20" id="20" /> <label for="20">20 cartes</label>
         <input type="radio" name="nb_cards" value="24" id="24" /> <label for="24">24 cartes</label>
       </p>
-    </div-->
+    </div>
+</form>
