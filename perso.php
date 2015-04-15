@@ -52,17 +52,17 @@ else
 	$_SESSION['score'] = 0;
 
 if (isset($_POST['type_end1']))
-	$_SESSION['type_end1'] = $_POST['type_end1']
+	$_SESSION['type_end1'] = $_POST['type_end1'];
 else
 	$_SESSION['type_end1'] = 0;
 
 if (isset($_POST['type_end2']))
-	$_SESSION['type_end2'] = $_POST['type_end2']
+	$_SESSION['type_end2'] = $_POST['type_end2'];
 else
 	$_SESSION['type_end2'] = 0;
 
 if (isset($_POST['type_end3']))
-	$_SESSION['type_end3'] = $_POST['type_end3']
+	$_SESSION['type_end3'] = $_POST['type_end3'];
 else
 	$_SESSION['type_end3'] = 0;
 
