@@ -1,5 +1,5 @@
 ﻿<title id="title-doc">Memory Game</title>
-
+<link rel="stylesheet" href="style.css" />
 <?php include ("connect.php"); ?>
 
 <center>

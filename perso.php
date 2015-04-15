@@ -1,38 +1,39 @@
 ﻿<title id="title-doc">Memory Game</title>
+<link rel="stylesheet" href="style.css" />
 
 <?php
 
-if ($_POST['theme'])
+if (isset($_POST['theme']))
 	$_SESSION['theme'] = $_POST['theme'];
 else
 	$_SESSION['theme'] = "histoire";
 
-if ($_POST['name'])
+if (isset($_POST['name']))
 	$_SESSION['name'] = $_POST['name'];
 else
 	$_SESSION['name'] = "Memory";
 
-if ($_POST['level'])
+if (isset($_POST['level']))
 	$_SESSION['level'] = $_POST['level'];
 else
 	$_SESSION['level'] = "maternelle";
 
-if ($_POST['consigne'])
+if (isset($_POST['consigne']))
 	$_SESSION['consigne'] = $_POST['consigne'];
 else
 	$_SESSION['consigne'] = "Retrouve les deux cartes correspondantes !";
 
-if ($_POST['nb_level'])
+if (isset($_POST['nb_level']))
 	$_SESSION['nb_level'] = $_POST['nb_level'];
 else
 	$_SESSION['nb_level'] = 1;
 
-if ($_POST['time'])
+if (isset($_POST['time']))
 	$_SESSION['time'] = $_POST['time'];
 else
 	$_SESSION['time'] = 5;
 
-if ($_POST['essai'])
+if (isset($_POST['essai']))
 	$_SESSION['essai'] = $_POST['essai'];
 else
 	$_SESSION['essai'] = 100;
@@ -77,7 +78,7 @@ else
 
 <form action="game_perso.php" method="post">
 	<div class="group">
-	  <p>
+	  <h1>
 	  Couleurs:
 	  	<input type="radio" name="color" value="" id="1" /> <label for="1"></label>
 	  	<input type="radio" name="color" value="" id="2" /> <label for="1"></label>
@@ -85,20 +86,24 @@ else
 	  	<input type="radio" name="color" value="" id="4" /> <label for="1"></label>
 	  	<input type="radio" name="color" value="" id="5" /> <label for="1"></label>
 	  	<input type="radio" name="color" value="" id="6" /> <label for="1"></label>
-	  </p>
+	  </h1>
 	</div>
 	<div class="group">
-	  <p>
+	  <h1>
 	    Type de cartes:
-	    	<input
+	    	<input type="radio" name="type" value="ftext" id="1" /><label for="ftext">Uniquement du texte</label>
+	    	<input type="radio" name="type" value="fimages"/><label for="ftext">Uniquement des images</label>
+	    	<input type="radio" name="type" value="imagestext"/><label for="ftext">Mélange de texte et d'images</label>
+	  </h1>
+	</div>
     <div class="group">
-      <p>
-       Nombre de cartes affichées :<br />heme forest
+      <h1>
+       Nombre de cartes affichées :<br />
         <input type="radio" name="nb_cards"  value="8" id="8" /> <label for="8">8 cartes</label>
         <input type="radio" name="nb_cards" value="12" id="12" /> <label for="12">12 cartes</label>
         <input type="radio" name="nb_cards" value="16" id="16" /> <label for="16">16 cartes</label>
         <input type="radio" name="nb_cards" value="20" id="20" /> <label for="20">20 cartes</label>
         <input type="radio" name="nb_cards" value="24" id="24" /> <label for="24">24 cartes</label>
-      </p>
+      </h1>
     </div>
 </form>

@@ -1,5 +1,6 @@
 ﻿<title id="title-doc">Memory Game</title>
 
+<link rel="stylesheet" href="style.css" />
 <form action="parts.php">
     <button type="submit" name="parts">Jouer
     </button>

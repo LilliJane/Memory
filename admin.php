@@ -1,4 +1,5 @@
 ﻿<?php include ("connect.php"); ?>
+<link rel="stylesheet" href="style.css" />
 
 <?php
 	if (!isset($_POST['connexion']))
@@ -6,7 +7,7 @@
 		?>
 
 			<center>
-				<h2>Vous devez vous connecter pour accéder à cette partie</h2>
+				<h3>Vous devez vous connecter pour accéder à cette partie</h3>
 
 				<form method="post" action="admin.php">
 					<input type="text" name="username" id="username" placeholder="Nom d'utilisateur" />

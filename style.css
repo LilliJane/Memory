@@ -1,5 +1,15 @@
 * { box-sizing:border-box; }
 
+@font-face {
+	font-family: 'Gotham-Rounded-Book';
+	src: url('gotham-rounded/Book_21016.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Gotham-Rounded-Bold';
+	src: url('gotham-rounded/Bold_21016.ttf') format('truetype');
+}
+
 body {
 	font-family: Helvetica;
 	background: #eee;
@@ -11,67 +21,58 @@ hgroup {
 	margin-top: 4em;
 }
 
-h1, h3 { font-weight: 300; }
+h1 {
+	font-family: 'Gotham-Rounded-Book';
+}
 
-h1 { color: #636363; }
-
-h3 { color: #4a89dc; }
+h3 {
+	font-family: 'Gotham-Rounded-Bold';
+}
 
 form {
-	width: 380px;
-	margin: 4em auto;
-	padding: 3em 2em 2em 2em;
-	background: #fafafa;
-	border: 1px solid #ebebeb;
-	box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+	font-family: 'Gotham-Rounded-Book';
 }
 
 .group { 
-	position: relative; 
-	margin-bottom: 45px; 
+	position: relative;
+	font-family: 'Gotham-Rounded-Book';
+/*	margin-bottom: 45px; */
 }
 
 input {
 	font-size: 18px;
+	font-family: 'Gotham-Rounded-Book'
 	padding: 10px 10px 10px 5px;
 	-webkit-appearance: none;
 	display: block;
 	background: #fafafa;
 	color: #636363;
 	width: 100%;
-	border: none;
-	border-radius: 0;
-	border-bottom: 1px solid #757575;
 }
-
-input:focus { outline: none; }
 
 
 /* Label */
 
 label {
-	color: #999; 
+	color: #999;
+	display: block; 
+	font-family: 'Gotham-Rounded-Book';
 	font-size: 18px;
 	font-weight: normal;
 	position: absolute;
-	pointer-events: none;
-	left: 5px;
-	top: 10px;
-	transition: all 0.2s ease;
 }
 
 
-/* active */
+/* active 
 
 input:focus ~ label, input.used ~ label {
 	top: -20px;
   transform: scale(.75); left: -2px;
-	/* font-size: 14px; */
+	font-size: 14px; 
 	color: #4a89dc;
 }
 
 
-/* Underline */
 
 .bar {
 	position: relative;
@@ -94,12 +95,9 @@ input:focus ~ label, input.used ~ label {
 .bar:after { right: 50%; }
 
 
-/* active */
 
 input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 
-
-/* Highlight */
 
 .highlight {
 	position: absolute;
@@ -112,22 +110,16 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 }
 
 
-/* active */
-
 input:focus ~ .highlight {
 	animation: inputHighlighter 0.3s ease;
 }
 
-
-/* Animations */
 
 @keyframes inputHighlighter {
 	from { background: #4a89dc; }
 	to 	{ width: 0; background: transparent; }
 }
 
-
-/* Button */
 
 .button {
   position: relative;
@@ -152,7 +144,7 @@ input:focus ~ .highlight {
 
 
 /* Button modifiers */
-
+/*
 .buttonBlue {
   background: #4a89dc;
   text-shadow: 2px 2px 0 rgba(39, 110, 204, .5);
@@ -162,7 +154,7 @@ input:focus ~ .highlight {
 
 
 /* Ripples container */
-
+/*
 .ripples {
   position: absolute;
   top: 0;
@@ -175,7 +167,7 @@ input:focus ~ .highlight {
 
 
 /* Ripples circle */
-
+/*
 .ripplesCircle {
   position: absolute;
   top: 50%;
@@ -194,7 +186,7 @@ input:focus ~ .highlight {
 
 
 /* Ripples animation */
-
+/*
 @keyframes ripples {
   0% { opacity: 0; }
 

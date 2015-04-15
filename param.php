@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
 	</head>
-
   <title id="title-doc">Memory Game</title>
 
 <body>
 
    <hgroup>
-    <h1>Nouvelle Partie</h1>
+    <h3>Nouvelle Partie</h3>
   </hgroup>
   <form action="perso.php" method="post">
     <div class="group">
