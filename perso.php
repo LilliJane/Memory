@@ -72,13 +72,9 @@ else
 ?>
  
 
-<p>Bonjour !</p>
- 
-<?php echo $_SESSION['theme']; ?>
-
 <form action="game_perso.php" method="post">
 	<div class="group">
-	  <h1>
+	  <h2>
 	  Couleurs:
 	  	<input type="radio" name="color" value="" id="1" /> <label for="1"></label>
 	  	<input type="radio" name="color" value="" id="2" /> <label for="1"></label>
@@ -86,24 +82,24 @@ else
 	  	<input type="radio" name="color" value="" id="4" /> <label for="1"></label>
 	  	<input type="radio" name="color" value="" id="5" /> <label for="1"></label>
 	  	<input type="radio" name="color" value="" id="6" /> <label for="1"></label>
-	  </h1>
+	  </h2>
 	</div>
 	<div class="group">
-	  <h1>
+	  <h2>
 	    Type de cartes:
 	    	<input type="radio" name="type" value="ftext" id="1" /><label for="ftext">Uniquement du texte</label>
 	    	<input type="radio" name="type" value="fimages"/><label for="ftext">Uniquement des images</label>
 	    	<input type="radio" name="type" value="imagestext"/><label for="ftext">Mélange de texte et d'images</label>
-	  </h1>
+	  </h2>
 	</div>
     <div class="group">
-      <h1>
+      <h2>
        Nombre de cartes affichées :<br />
         <input type="radio" name="nb_cards"  value="8" id="8" /> <label for="8">8 cartes</label>
         <input type="radio" name="nb_cards" value="12" id="12" /> <label for="12">12 cartes</label>
         <input type="radio" name="nb_cards" value="16" id="16" /> <label for="16">16 cartes</label>
         <input type="radio" name="nb_cards" value="20" id="20" /> <label for="20">20 cartes</label>
         <input type="radio" name="nb_cards" value="24" id="24" /> <label for="24">24 cartes</label>
-      </h1>
+      </h2>
     </div>
 </form>

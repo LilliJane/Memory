@@ -1,200 +1,53 @@
-* { box-sizing:border-box; }
-
 @font-face {
 	font-family: 'Gotham-Rounded-Book';
-	src: url('gotham-rounded/Book_21016.ttf') format('truetype');
+	src: url('Gotham-Rounded-Book_21018.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Gotham-Rounded-Bold';
-	src: url('gotham-rounded/Bold_21016.ttf') format('truetype');
+	src: url('Gotham-Rounded-Bold_21016.ttf');
 }
 
 body {
-	font-family: Helvetica;
-	background: #eee;
-  -webkit-font-smoothing: antialiased;
+	color: white;
+	font-family: 'Gotham-Rounded-Book';
+	background-image:url(img/background.png);
+	background-attachment:fixed;
 }
 
-hgroup { 
-	text-align:center;
-	margin-top: 4em;
-}
+/* Titre important */
 
 h1 {
+	font-family: 'Gotham-Rounded-Bold';
+}
+
+h2 {
 	font-family: 'Gotham-Rounded-Book';
 }
 
-h3 {
-	font-family: 'Gotham-Rounded-Bold';
+p {
+
+}
+
+center {
+	margin-top: 200px;
 }
 
 form {
 	font-family: 'Gotham-Rounded-Book';
 }
 
-.group { 
-	position: relative;
-	font-family: 'Gotham-Rounded-Book';
-/*	margin-bottom: 45px; */
-}
-
 input {
 	font-size: 18px;
 	font-family: 'Gotham-Rounded-Book'
-	padding: 10px 10px 10px 5px;
-	-webkit-appearance: none;
-	display: block;
-	background: #fafafa;
-	color: #636363;
-	width: 100%;
 }
-
 
 /* Label */
 
 label {
-	color: #999;
-	display: block; 
 	font-family: 'Gotham-Rounded-Book';
-	font-size: 18px;
-	font-weight: normal;
-	position: absolute;
 }
 
-
-/* active 
-
-input:focus ~ label, input.used ~ label {
-	top: -20px;
-  transform: scale(.75); left: -2px;
-	font-size: 14px; 
-	color: #4a89dc;
-}
-
-
-
-.bar {
-	position: relative;
-	display: block;
-	width: 100%;
-}
-
-.bar:before, .bar:after {
-	content: '';
-	height: 2px; 
-	width: 0;
-	bottom: 1px; 
-	position: absolute;
-	background: #4a89dc; 
-	transition: all 0.2s ease;
-}
-
-.bar:before { left: 50%; }
-
-.bar:after { right: 50%; }
-
-
-
-input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
-
-
-.highlight {
-	position: absolute;
-	height: 60%; 
-	width: 100px; 
-	top: 25%; 
-	left: 0;
-	pointer-events: none;
-	opacity: 0.5;
-}
-
-
-input:focus ~ .highlight {
-	animation: inputHighlighter 0.3s ease;
-}
-
-
-@keyframes inputHighlighter {
-	from { background: #4a89dc; }
-	to 	{ width: 0; background: transparent; }
-}
-
-
-.button {
-  position: relative;
-  display: inline-block;
-  padding: 12px 24px;
-  margin: .3em 0 1em 0;
-  width: 100%;
-  vertical-align: middle;
-  color: #fff;
-  font-size: 16px;
-  line-height: 20px;
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-  letter-spacing: 1px;
-  background: transparent;
-  border: 0;
-  border-bottom: 2px solid #3160B6;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-.button:focus { outline: 0; }
-
-
-/* Button modifiers */
-/*
-.buttonBlue {
-  background: #4a89dc;
-  text-shadow: 2px 2px 0 rgba(39, 110, 204, .5);
-}
-
-.buttonBlue:hover { background: #357bd8; }
-
-
-/* Ripples container */
-/*
-.ripples {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: transparent;
-}
-
-
-/* Ripples circle */
-/*
-.ripplesCircle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.25);
-}
-
-.ripples.is-active .ripplesCircle {
-  animation: ripples .4s ease-in;
-}
-
-
-/* Ripples animation */
-/*
-@keyframes ripples {
-  0% { opacity: 0; }
-
-  25% { opacity: 1; }
-
-  100% {
-    width: 200%;
-    padding-bottom: 200%;
-    opacity: 0;
-  }
+button {
+	font-family: 'Gotham-Rounded-Book';
 }

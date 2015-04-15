@@ -4,18 +4,26 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-	</head>
+    <link rel="stylesheet" href="style.css" />
+    <title id="title-doc">Memory Game</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-  <title id="title-doc">Memory Game</title>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-<body>
+    <!-- Latest compiled and minified JavaScript --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-   <hgroup>
-    <h1>Nouvelle Partie</h1>
-  </hgroup>
-  <form action="perso.php" method="post">
-    <div class="group">
-       <label for="theme">Thème : </label> &nbsp;
+    <link rel="stylesheet" href="style.css" />
+	  </head>
+
+  <body>
+
+  <h1>PARTIE PRÉDÉFINIE</h1>
+  <form action="game.php" method="post" class="new_part">
+    <div class="col-md-3">
+       <label for="theme">Thème : </label> <br />
        <select name="theme" id="theme">
           <?php
             $result = $link->query('SELECT * FROM memory_genre');
@@ -24,17 +32,10 @@
               echo '<option value=" ' . $memory_type['id'] . '"> ' . $memory_type['nom'] . '</option>';
            ?>
        </select>
-        <a href="#">Ajouter une catégorie</a><br /><br />
     </div>
 
-    <div class="group">
-      <label>Nom : </label> &nbsp;
-      <input type="text" name="name">
-      <br /><br />
-    </div>
-
-    <div class="group">
-       <label for="level">Niveau scolaire : </label> &nbsp;
+    <div class="col-md-3">
+       <label for="level">Niveau scolaire : </label> <br />
        <select name="level" id="level">
           <?php
             $result = $link->query('SELECT * FROM memory_level');
@@ -46,51 +47,21 @@
        <br /><br />
     </div>
 
-    <div class="group">
-      <label>Consigne : </label> &nbsp;
-      <input type="text" name="consigne"><span class="highlight"></span><span class="bar"></span>
-    </div><br />
+    <div class="col-md-3">
+      <label>Durée du niveau : </label> <br />
+      <input type="text" name="time" maxlength="20"><span class="bar"></span>
+    </div>
 
-    <div class="group">
-      <label>Durée du niveau : </label> &nbsp;
-      <input type="text" name="time"><span class="highlight"></span><span class="bar"></span>
-    </div><br />
-
-    <div class="group">
+    <div class="col-md-3">
       <label>Nombre d'essais maximum : </label> &nbsp;
       <input type="text" name="essai"><span class="highlight"></span><span class="bar"></span>
     </div><br />
 
-    <div class="group">
-      <label>Mode deux joueurs : </label> &nbsp;
-      <input type="checkbox" name="multi"><span class="highlight"></span><span class="bar"></span>
-    </div><br />
-
-    <div class="group">
-      <label>Affichage du score : </label> &nbsp;
-      <input type="checkbox" name="score"><span class="highlight"></span><span class="bar"></span>
-    </div><br />
-
-    <div class="group">
-      <label>Nombre de niveaux : </label> &nbsp;
-      <input type="text" name="nb_level"><span class="highlight"></span><span class="bar"></span>
-    </div><br />
-
-    <div class="group">
-      <p>
-       Affichage :<br />
-        <input type="checkbox" name="type_end1" value="professeur" >Retour au professeur<br />
-        <input type="checkbox" name="type_end2" value="rejouer" >Rejouer
-        <input type="checkbox" name="type_end3" value="défier"  >Défier
-      </p>
-    </div>
-
-    <button type="submit" class="button buttonBlue">Suivant
-     <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+    <button type="submit">Jouer
     </button>
   </form>
 
-  <form action="game.php" method="post">
-    <button type="submit" name="game">Jouer
-    </button>
-  </form>
+<h1>MES PARTIES ENREGISTRÉES</h1>
+<form action="game.php" method="post">
+    <button type="submit">Jouer</button>
+</form>

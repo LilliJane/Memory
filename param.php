@@ -13,7 +13,7 @@
    <hgroup>
     <h3>Nouvelle Partie</h3>
   </hgroup>
-  <form action="perso.php" method="post">
+  <form action="perso.php" method="post" class="new_part">
     <div class="group">
        <label for="theme">Quel thème souhaitez-vous utiliser ?</label><br />
        <select name="level" id="level">

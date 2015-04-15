@@ -7,7 +7,7 @@
 		?>
 
 			<center>
-				<h3>Vous devez vous connecter pour accéder à cette partie</h3>
+				<h2>Vous devez vous connecter pour accéder à cette partie</h2>
 
 				<form method="post" action="admin.php">
 					<input type="text" name="username" id="username" placeholder="Nom d'utilisateur" />
