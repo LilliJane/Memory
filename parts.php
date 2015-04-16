@@ -80,6 +80,12 @@
           $result = $link->query('SELECT * FROM memory_game');
           $game = $result->fetch_assoc();
 
+          $level_join = $link->prepare('SELECT nom FROM memory_level WHERE id = ?');
+          $level_join->bind_param('d', $game['level']);
+          $level_join->execute();
+          $level_result = $level_join->get_result();
+          $level_text = $level_result->fetch_assoc();
+
           if ($count = $result->num_rows == 0)
             echo 'Aucune partie n\'a été trouvée sur votre compte.<br /><br />';
           while ($count);
@@ -87,7 +93,7 @@
             echo '<tr>';
             echo '<td>' . $game['id'] . '</td>';
             echo '<td>' . $game['name'] . '</td>';
-            echo '<td>' . $game['level'] . '</td>';
+            echo '<td>' . $level_text['nom'] . '</td>';
             echo '<td>' . $game['order'] . '</td>';
             echo '<td>' . $game['nblevel'] . '</td>';
             echo '<td>' . $game['try'] . '</td>';
