@@ -28,8 +28,8 @@
 	<div id="hidesplash" class="container text-center col-md-4 col-md-offset-4" style="margin-top: 15%; display:none">
 		<h2>Choisissez votre mode de jeu :</h2>
 		<ul> 
-  			<li><a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/game.php" class="pad_a">PARTIE RAPIDE</a></li>
-  			<li class="border_li"><a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/admin.php" class="pad_a">PROFESSEUR</a></li>
+  			<a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/game.php" class="pad_a"><li>PARTIE RAPIDE</li></a>
+  			<a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/admin.php" class="pad_a"><li class="border_li">PROFESSEUR</li></a>
   		</ul>
 	</div>
 </body>

@@ -4,6 +4,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
     <title id="title-doc">Memory Game</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -29,8 +30,8 @@
           <?php
             $result = $link->query('SELECT * FROM memory_genre');
 
-            while ($memory_type = $result->fetch_assoc())
-              echo '<option value=" ' . $memory_type['id'] . '"> ' . $memory_type['nom'] . '</option>';
+            while ($memory_genre = $result->fetch_assoc())
+              echo '<option value=" ' . $memory_genre['id'] . '"> ' . $memory_genre['nom'] . '</option>';
            ?>
        </select>
     </div>
@@ -41,26 +42,24 @@
           <?php
             $result = $link->query('SELECT * FROM memory_level');
 
-            while ($memory_type = $result->fetch_assoc())
-              echo '<option value=" ' . $memory_type['id'] . '"> ' . $memory_type['nom'] . '</option>';
+            while ($memory_level = $result->fetch_assoc())
+              echo '<option value=" ' . $memory_level['id'] . '"> ' . $memory_level['nom'] . '</option>';
            ?>
        </select>
     </div>
 
     <div class="col-md-3">
-      <label>Durée du niveau : </label> &nbsp;
-      <input type="text" name="time" maxlength="20">
+      <label>Durée du niveau : </label> <br />
+      <input type="text" name="time" maxlength="20" class="pad-txt">
     </div>
 
     <div class="col-md-3">
-      <label>Nombre d'essais : </label> &nbsp;
-      <input type="text" name="essai"><span class="highlight"></span>
-    </div>
+      <label>Nombre d'essais: </label> <br />
+      <input type="text" name="try" class="pad-txt"></div>
     </div>
 
     <div class="row col-md-3 col-md-offset-7" style="margin-top: 20px">
-      <button type="submit" class="game">JOUER
-      </button>
+      <button type="submit" name="gamestart_predef" class="game">JOUER</button>
     </div>
   </form>
 

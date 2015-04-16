@@ -19,7 +19,7 @@
 	{
 		?>
 		<form method="post" action="game.php">
-			<input type="text" name="keyname" placeholder="Entrez votre code ici" />
+			<input type="text" name="keyname" class="pad-txt" placeholder="Entrez votre code ici" />
 			<br /><br />
 	    	<div class="group">
 	    		<label for="level">Niveau : </label>
@@ -47,6 +47,7 @@
 			exit();
 		}
 		?>
+		<div class="container-fluid">
 		<h1>LE JEU COMMENCE</h1>
 		<br />
 
@@ -94,6 +95,7 @@
 					}
 				?>
 		</table>
+		</div>
 		<?php
 	}
 ?>

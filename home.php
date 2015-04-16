@@ -11,8 +11,8 @@
 	<div class="container text-center col-md-4 col-md-offset-4" style="margin-top: 15%">
 
 		<ul>
-  			<li><a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/parts.php" class="pad_a">JOUER</a></li>
-  			<li class="border_li"><a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/param.php" class="pad_a">CREER</a></li>
-  			<li class="border_li"><a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/students.php" class="pad_a">ELEVES</a></li>
+  			<a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/parts.php" class="pad_a"><li>JOUER</li></a>
+  			<a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/param.php" class="pad_a"><li class="border_li">CRÉER</li></a>
+  			<a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/students.php" class="pad_a"><li class="border_li">ÉLÈVES</li></a>
   		</ul>
   	</div>
