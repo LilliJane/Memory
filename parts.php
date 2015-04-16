@@ -54,7 +54,7 @@
     </div>
 
     <div class="col-md-3">
-      <label>Nombre d'essais maximum : </label> &nbsp;
+      <label>Nombre d'essais maximum : </label> <br />
       <input type="text" name="essai"><span class="highlight"></span><span class="bar"></span>
     </div>
     </div>

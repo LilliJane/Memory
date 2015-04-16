@@ -1,23 +1,33 @@
 ﻿<?php include ("connect.php"); ?>
+<title id="title-doc">Memory Game</title>
 <link rel="stylesheet" href="style.css" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript --> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 <?php
 	if (!isset($_POST['connexion']))
 	{
 		?>
-
-			<center>
+	<div class="container text-center col-md-4 col-md-offset-4" style="margin-top: 15%">
 				<h2>Vous devez vous connecter pour accéder à cette partie</h2>
 
-				<form method="post" action="admin.php">
-					<input type="text" name="username" id="username" placeholder="Nom d'utilisateur" />
-					<br /><br />
-					<input type="password" name="password" placeholder="Mot de passe" />
-			   		<br /><br />
+				<form method="post" action="admin.php" class="form-horizontal" role="form">
+					<div class="div-auth">
+						<input type="text" name="username" id="username" placeholder="Nom d'utilisateur" class="form-control input-auth"/>
+						<hr/>
+						<input type="password" name="password" placeholder="Mot de passe" class="form-control input-auth"/>
+					</div>
+					
 			 		<button type="submit" name= "connexion"/>Accéder
 			 		</button>
 			 	</form>
-			</center>
+			 	</div>
 		<?php
 	}
 	else

@@ -83,6 +83,28 @@ li {
 	border-top: 3px solid #22a7f0;
 }
 
+/* Admin part */
+
+hr {
+	border-width: 3px 0px 0px;
+	border-color: #22a7f0;
+	height: 3px;
+}
+
+.div-auth {
+	background-color: #446cb3;
+	border-radius: 10px;
+	font-family: 'Gotham-Rounded-Book';
+	list-style-type: none;
+	padding: 0;
+	margin: auto;
+	width: 344px;
+}
+
+.input-auth {
+	background-color: #446cb3;	
+}
+
 /* Button */
 button {
   -webkit-border-radius: 28;
