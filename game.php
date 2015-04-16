@@ -134,6 +134,7 @@ class Display
 			$display = new Display();
 			$display = $display->game($count, $_POST['genre'], $_POST['level'], $game, $result);
 		}
+	}
 
 ?>
 
