@@ -1,3 +1,5 @@
+﻿<?php include ("soap.php"); ?>
+
 <title id="title-doc">Memory Game</title>
 <link rel="stylesheet" href="style.css" />
 <!-- Latest compiled and minified CSS -->
@@ -13,11 +15,11 @@
 <center>
 
 <?php
-	if (!isset($_POST['lol']))
+	if (!isset($_POST['gamestart']))
 	{
 		?>
 		<form method="post" action="game.php">
-			<input type="text" class="start" name="code" placeholder="Entrez votre code ici" />
+			<input type="text" name="keyname" placeholder="Entrez votre code ici" />
 			<br /><br />
 	    	<div class="group">
 	    		<label for="level">Niveau : </label>
@@ -31,14 +33,19 @@
        			</select>
     		</div>
     		<br /><br />
-	 		<button type="submit" name= "lol"/>JOUER
+	 		<button type="submit" name= "gamestart"/>JOUER
 	 		</button>
 	 	</form>
 	 	<?php
 	}
 	else
 	{
-
+		$studentk = new SoapConnect();
+		$coucou = $studentk->retrieve_student($_POST['keyname']);
+		if (!$coucou) {
+			echo '<h3>Le code entré n\'existe pas</h3>';
+			exit();
+		}
 		?>
 		<h1>LE JEU COMMENCE</h1>
 		<br />
