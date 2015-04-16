@@ -55,10 +55,10 @@
     <div class="col-md-3">
       <label>Nombre d'essais maximum : </label> &nbsp;
       <input type="text" name="essai"><span class="highlight"></span><span class="bar"></span>
-    </div><br />
+    </div><br /><br />
 
     <button type="submit">Jouer
-    </button>
+    </button> 
   </form>
 
 <h1>MES PARTIES ENREGISTRÉES</h1>
