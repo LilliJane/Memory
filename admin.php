@@ -23,9 +23,11 @@
 						<hr/>
 						<input type="password" name="password" placeholder="Mot de passe" class="form-control input-auth"/>
 					</div>
-					
-			 		<button type="submit" name= "connexion"/>Accéder
-			 		</button>
+
+					<div class="row" style="margin-top: 20px">
+			 			<button type="submit" name= "connexion"/>ACCÉDER
+			 			</button>
+			 		</div>
 			 	</form>
 			 	</div>
 		<?php

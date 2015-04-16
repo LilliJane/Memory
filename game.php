@@ -1,4 +1,4 @@
-﻿<title id="title-doc">Memory Game</title>
+<title id="title-doc">Memory Game</title>
 <link rel="stylesheet" href="style.css" />
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -31,7 +31,8 @@
        			</select>
     		</div>
     		<br /><br />
-	 		<input type="submit" name= "lol" value="Commencer la partie" /><br /><br />
+	 		<button type="submit" name= "lol"/>JOUER
+	 		</button>
 	 	</form>
 	 	<?php
 	}

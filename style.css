@@ -87,8 +87,8 @@ li {
 
 hr {
 	border-width: 3px 0px 0px;
+	border-style: solid none none;
 	border-color: #22a7f0;
-	height: 3px;
 }
 
 .div-auth {
@@ -101,14 +101,12 @@ hr {
 	width: 344px;
 }
 
-.input-auth {
+.input-auth input[=text], input[=password] {
 	background-color: #446cb3;	
 }
 
 /* Button */
 button {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
   border-radius: 28px;
   font-family: 'Gotham-Rounded-Book';
   color: #ffffff;
@@ -116,14 +114,11 @@ button {
   background: #446cb3;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  width: 176px;
+  height: 40px;
 }
 
 button:hover {
   background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 }
