@@ -5,7 +5,9 @@
 
   <h2>Choisissez votre mode de jeu :</h2>
 
-  <form method="post" action="game.php"><input type="submit" value="Partie Rapide" /><br /><br /></form>
-  <form method="post" action="admin.php"><input type="submit" value="Professeur" /><br /><br /></form>
+  <ul>
+  	<li><a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/game.php" class="pad_a">PARTIE RAPIDE</a></li>
+  	<li class="border_li"><a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/admin.php" class="pad_a">PROFESSEUR</a></li>
+  </ul>
 
 </center>
