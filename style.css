@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'Gotham-Rounded-Book';
-	src: url('Gotham-Rounded-Book_21018.ttf') format('truetype');
+	src: url('gotham-rounded/Gotham-Rounded-Book_21018.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'Gotham-Rounded-Bold';
-	src: url('Gotham-Rounded-Bold_21016.ttf');
+	src: url('gotham-rounded/Gotham-Rounded-Bold_21016.ttf');
 }
 
 body {
