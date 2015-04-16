@@ -83,8 +83,7 @@
       </p>
     </div>
 
-    <button type="submit" class="button buttonBlue">Suivant
-     <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+    <button type="submit" class="next">Suivant
     </button>
   </form>
 

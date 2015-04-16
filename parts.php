@@ -54,18 +54,19 @@
     </div>
 
     <div class="col-md-3">
-      <label>Nombre d'essais maximum : </label> <br />
+      <label>Nombre d'essais: </label> <br />
       <input type="text" name="essai"><span class="highlight"></span><span class="bar"></span>
     </div>
     </div>
 
-    <div class="row" style="margin-top: 20px">
-      <button type="submit">Jouer
+    <div class="row col-md-3 col-md-offset-7" style="margin-top: 20px">
+      <button type="submit" class="game">JOUER
       </button>
     </div>
   </form>
 
-<h1>MES PARTIES ENREGISTRÉES</h1>
+<div class="row" style="display:inline-block">
+  <h1>MES PARTIES ENREGISTRÉES</h1>
 
     <table border="1" class="table">
       <tr>
@@ -111,7 +112,5 @@
         ?>
     </table>
 
-<form action="game.php" method="post">
-    <button type="submit">Jouer</button>
-</form>
   </div>
+</div>

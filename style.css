@@ -21,9 +21,11 @@ body {
 
 h1 {
 	font-family: 'Gotham-Rounded-Bold';
+	font-size: 3em;
 }
 
 h2 {
+	color: white;
 	font-family: 'Gotham-Rounded-Book';
 }
 
@@ -48,6 +50,7 @@ input {
 
 label {
 	font-family: 'Gotham-Rounded-Book';
+	font-size: 1.8em;
 }
 
 /* Liste */
@@ -77,6 +80,7 @@ a.pad_a {
 li {
 	height: 100px;
 	line-height: 100px;
+	font-size: 2em;
 }
 
 .border_li {
@@ -102,18 +106,23 @@ hr {
 	width: 344px;
 }
 
-.input-auth input[=text], input[=password] {
-	background-color: #446cb3;	
+.form-control {
+	background-color: #446cb3;
+	border: none;
+	color: #ffffff;
+	height: 70px;
+	border-radius: 10px;
 }
 
 /* Button */
 button {
-  font-family: 'Gotham-Rounded-Book';
-  color: #ffffff;
-  font-size: 20px;
-  background: #446cb3;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+  	font-family: 'Gotham-Rounded-Book';
+  	color: #ffffff;
+  	font-size: 20px;
+  	background: #446cb3;
+  	padding: 10px 20px 10px 20px;
+  	text-decoration: none;
+	vertical-align: middle;
 }
 
 button:hover {
@@ -122,7 +131,29 @@ button:hover {
 }
 
 .access {
-  border-radius: 28px;	
+  box-shadow: 1px 4px 10px #22313f;
+  border-radius: 28px;
+  border-style: solid;
+  border-color: #446cb3;
+  color: #ffffff;
   width: 176px;
   height: 40px;
+  font-size: 1.5em;
+}
+
+.game {
+  box-shadow: 1px 4px 10px #22313f;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #446cb3;	
+  font-size: 2.25em;
+  width: 268px;
+  height: 52px;
+  margin: 0;
+	vertical-align: middle;
+
+}
+
+.next {
+
 }

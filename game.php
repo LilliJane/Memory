@@ -17,7 +17,7 @@
 	{
 		?>
 		<form method="post" action="game.php">
-			<input type="text" name="code" placeholder="Entrez votre code ici" />
+			<input type="text" class="start" name="code" placeholder="Entrez votre code ici" />
 			<br /><br />
 	    	<div class="group">
 	    		<label for="level">Niveau : </label>
