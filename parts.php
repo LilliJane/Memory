@@ -9,8 +9,8 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <!-- Optional genre -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-genre.min.css">
 
     <!-- Latest compiled and minified JavaScript --> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -25,13 +25,13 @@
  
   <div class="row">
     <div class="col-md-3">
-       <label for="theme">Thème : </label> <br />
-       <select name="theme" id="theme">
+       <label for="genre">Thème : </label> <br />
+       <select name="genre" id="genre">
           <?php
             $result = $link->query('SELECT * FROM memory_genre');
 
-            while ($memory_type = $result->fetch_assoc())
-              echo '<option value=" ' . $memory_type['id'] . '"> ' . $memory_type['nom'] . '</option>';
+            while ($memory_genre = $result->fetch_assoc())
+              echo '<option value=" ' . $memory_genre['id'] . '"> ' . $memory_genre['nom'] . '</option>';
            ?>
        </select>
     </div>
@@ -42,26 +42,24 @@
           <?php
             $result = $link->query('SELECT * FROM memory_level');
 
-            while ($memory_type = $result->fetch_assoc())
-              echo '<option value=" ' . $memory_type['id'] . '"> ' . $memory_type['nom'] . '</option>';
+            while ($memory_level = $result->fetch_assoc())
+              echo '<option value=" ' . $memory_level['id'] . '"> ' . $memory_level['nom'] . '</option>';
            ?>
        </select>
     </div>
 
     <div class="col-md-3">
       <label>Durée du niveau : </label> <br />
-      <input type="text" name="time" maxlength="20"><span class="bar"></span>
+      <input type="text" name="time" maxlength="20">
     </div>
 
     <div class="col-md-3">
       <label>Nombre d'essais: </label> <br />
-      <input type="text" name="essai"><span class="highlight"></span><span class="bar"></span>
-    </div>
+      <input type="text" name="try"></div>
     </div>
 
     <div class="row col-md-3 col-md-offset-7" style="margin-top: 20px">
-      <button type="submit" class="game">JOUER
-      </button>
+      <button type="submit" name="gamestart_predef" class="game">JOUER</button>
     </div>
   </form>
 
