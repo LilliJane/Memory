@@ -21,6 +21,8 @@
 	}
 	else
 	{
+		session_start();
+
 		$post_user = $_POST['username'];
 		$post_pass = sha1($_POST['password']);
 
