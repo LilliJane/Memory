@@ -37,6 +37,19 @@ center {
 	margin-top: 200px;
 }
 
+/* Gif */
+
+#splashscreen {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:white;
+}
+
+/* Form */
+
 form {
 	font-family: 'Gotham-Rounded-Book';
 }
@@ -51,6 +64,7 @@ input {
 label {
 	font-family: 'Gotham-Rounded-Book';
 	font-size: 1.8em;
+	font-weight: initial;
 }
 
 /* Liste */
@@ -62,7 +76,6 @@ ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	width: 344px;
 	box-shadow: 1px 4px 10px #22313f;
 }
 
@@ -81,10 +94,10 @@ li {
 	height: 100px;
 	line-height: 100px;
 	font-size: 2em;
+	outline: none;
 }
 
 .border_li {
-	width: 344px;
 	border-top: 3px solid #22a7f0;
 }
 
@@ -103,7 +116,6 @@ hr {
 	list-style-type: none;
 	padding: 0;
 	margin: auto;
-	width: 344px;
 }
 
 .form-control {
@@ -112,6 +124,28 @@ hr {
 	color: #ffffff;
 	height: 70px;
 	border-radius: 10px;
+}
+
+input {
+	background-color: #446cb3;
+	border: none;
+	color: #ffffff;
+	height: 24px;
+	width: 208px;
+	border-radius: 10px;	
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px #446cb3 inset;
+    border: none;
+    -webkit-text-fill-color: #ffffff;
+}
+
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px #446cb3 inset;
+    border: none;
+    -webkit-text-fill-color: #ffffff;
 }
 
 /* Button */
@@ -135,6 +169,7 @@ button:hover {
   border-radius: 28px;
   border-style: solid;
   border-color: #446cb3;
+  padding: 5px;
   color: #ffffff;
   width: 176px;
   height: 40px;
@@ -142,14 +177,15 @@ button:hover {
 }
 
 .game {
-  box-shadow: 1px 4px 10px #22313f;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: #446cb3;	
-  font-size: 2.25em;
-  width: 268px;
-  height: 52px;
-  margin: 0;
+  	box-shadow: 1px 4px 10px #22313f;
+  	border-radius: 10px;
+  	border-style: solid;
+  	border-color: #446cb3;	
+  	font-size: 2.25em;
+  	width: 268px;
+  	height: 52px;
+	padding: 5px;
+	margin: 0;
 	vertical-align: middle;
 
 }

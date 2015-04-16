@@ -4,7 +4,6 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
     <title id="title-doc">Memory Game</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -49,13 +48,13 @@
     </div>
 
     <div class="col-md-3">
-      <label>Durée du niveau : </label> <br />
-      <input type="text" name="time" maxlength="20"><span class="bar"></span>
+      <label>Durée du niveau : </label> &nbsp;
+      <input type="text" name="time" maxlength="20">
     </div>
 
     <div class="col-md-3">
-      <label>Nombre d'essais: </label> <br />
-      <input type="text" name="essai"><span class="highlight"></span><span class="bar"></span>
+      <label>Nombre d'essais : </label> &nbsp;
+      <input type="text" name="essai"><span class="highlight"></span>
     </div>
     </div>
 
