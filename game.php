@@ -64,7 +64,7 @@ class Display
 	{
 		?>
 		<form method="post" action="game.php">
-			<input type="text" name="keyname" placeholder="&nbsp;Entrez votre code ici" />
+		<input type="text" name="keyname" class="pad-txt" placeholder="Entrez votre code ici" />
 			<br /><br />
 	    	<div class="group">
 	    		<label for="level">Niveau : </label>
@@ -85,6 +85,7 @@ class Display
 	else
 	{
 		?>
+		<div class="container-fluid">
 		<h1>LE JEU COMMENCE</h1>
 		<br />
 
@@ -133,7 +134,7 @@ class Display
 			$display = new Display();
 			$display = $display->game($count, $_POST['genre'], $_POST['level'], $game, $result);
 		}
-	}
+
 ?>
 
 </center>

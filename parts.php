@@ -50,12 +50,20 @@
 
     <div class="col-md-3">
       <label>Durée du niveau : </label> <br />
+<<<<<<< HEAD
       <input type="text" name="time" maxlength="20">
+=======
+      <input type="text" name="time" maxlength="20" class="pad-txt">
+>>>>>>> a8cc8cf435ce9b38bd219fe0b053ef4a9987ea8e
     </div>
 
     <div class="col-md-3">
       <label>Nombre d'essais: </label> <br />
+<<<<<<< HEAD
       <input type="text" name="try"></div>
+=======
+      <input type="text" name="try" class="pad-txt"></div>
+>>>>>>> a8cc8cf435ce9b38bd219fe0b053ef4a9987ea8e
     </div>
 
     <div class="row col-md-3 col-md-offset-7" style="margin-top: 20px">
