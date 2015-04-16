@@ -3,18 +3,10 @@
 <link rel="stylesheet" href="style.css" />
 
 <center>
-	<form action="parts.php">
-    	<button type="submit" name="parts">Jouer
-    	</button>
-	</form>
 
-	<form action="param.php">
-    	<button type="submit" name="param">Créer
-    	</button>
-	</form>
-
-	<form action="students.php">
-    	<button type="submit" name="students">Élèves
-    	</button>
-	</form>
+	<ul>
+  		<li><a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/parts.php" class="pad_a">JOUER</a></li>
+  		<li class="border_li"><a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/param.php" class="pad_a">CREER</a></li>
+  		<li class="border_li"><a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/students.php" class="pad_a">ELEVES</a></li>
+  	</ul>
 </center>

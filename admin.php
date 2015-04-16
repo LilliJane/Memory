@@ -14,7 +14,8 @@
 					<br /><br />
 					<input type="password" name="password" placeholder="Mot de passe" />
 			   		<br /><br />
-			 		<input type="submit" name= "connexion" value="Connexion" />
+			 		<button type="submit" name= "connexion"/>Accéder
+			 		</button>
 			 	</form>
 			</center>
 		<?php

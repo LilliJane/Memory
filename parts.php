@@ -19,9 +19,11 @@
 	  </head>
 
   <body>
-
+  <div class="container">
   <h1>PARTIE PRÉDÉFINIE</h1>
   <form action="game.php" method="post" class="new_part">
+ 
+  <div class="row">
     <div class="col-md-3">
        <label for="theme">Thème : </label> <br />
        <select name="theme" id="theme">
@@ -44,7 +46,6 @@
               echo '<option value=" ' . $memory_type['id'] . '"> ' . $memory_type['nom'] . '</option>';
            ?>
        </select>
-       <br /><br />
     </div>
 
     <div class="col-md-3">
@@ -55,10 +56,13 @@
     <div class="col-md-3">
       <label>Nombre d'essais maximum : </label> &nbsp;
       <input type="text" name="essai"><span class="highlight"></span><span class="bar"></span>
-    </div><br /><br />
+    </div>
+    </div>
 
-    <button type="submit">Jouer
-    </button> 
+    <div class="row" style="margin-top: 20px">
+      <button type="submit">Jouer
+      </button>
+    </div>
   </form>
 
 <h1>MES PARTIES ENREGISTRÉES</h1>
@@ -110,3 +114,4 @@
 <form action="game.php" method="post">
     <button type="submit">Jouer</button>
 </form>
+  </div>
