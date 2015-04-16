@@ -60,6 +60,7 @@ ul {
 	padding: 0;
 	margin: 0;
 	width: 344px;
+	box-shadow: 1px 4px 10px #22313f;
 }
 
 ul li a {
@@ -107,18 +108,21 @@ hr {
 
 /* Button */
 button {
-  border-radius: 28px;
   font-family: 'Gotham-Rounded-Book';
   color: #ffffff;
   font-size: 20px;
   background: #446cb3;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-  width: 176px;
-  height: 40px;
 }
 
 button:hover {
   background: #3cb0fd;
   text-decoration: none;
+}
+
+.access {
+  border-radius: 28px;	
+  width: 176px;
+  height: 40px;
 }

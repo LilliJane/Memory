@@ -25,7 +25,7 @@
 					</div>
 
 					<div class="row" style="margin-top: 20px">
-			 			<button type="submit" name= "connexion"/>ACCÉDER
+			 			<button type="submit" name= "connexion" class="access"/>ACCÉDER
 			 			</button>
 			 		</div>
 			 	</form>
