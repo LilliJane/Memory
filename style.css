@@ -156,6 +156,13 @@ input:-webkit-autofill:focus {
     -webkit-text-fill-color: #ffffff;
 }
 
+.right {
+	float: right;
+	border-width: 3px;
+	border-color: #22a7f0;
+	width: 248px;
+}
+
 /* Button */
 button {
   	font-family: 'Gotham-Rounded-Book';
@@ -198,11 +205,9 @@ button:hover {
 
 }
 
-.new-crea {
-  	box-shadow: 1px 4px 10px #22313f;
+button.new-crea {
+ 	border: 2px solid #22a7f0;
   	border-radius: 10px;
-  	border-style: solid;
-  	border-color: #22313f;	
   	font-size: 2.25em;
 	width: 176px;
 	height: 60px;	
@@ -222,17 +227,17 @@ button:hover {
 	width: 248px;
 	overflow: hidden;
 	background: url(img/picto/arrow.png) no-repeat right #446cb3;
-	border: 1px #22313f;
-	border-color: #22313f;
+	border: 1px #22a7f0;
+	border-color: #22a7f0;
 }
 
-.custom {
+select.custom {
 	width: 248px;
 	color: #ffffff;
 	border-radius: 10px;
 	overflow: hidden;
-	border: 1px #22313f;
-	border-color: #22313f;
+	border: 1px #22a7f0;
+	border-color: #22a7f0;
 	background: none;
 	border: none;
 	-webkit-appearance: button;
