@@ -54,11 +54,6 @@ form {
 	font-family: 'Gotham-Rounded-Book';
 }
 
-input {
-	font-size: 18px;
-	font-family: 'Gotham-Rounded-Book'
-}
-
 /* Label */
 
 label {
@@ -103,8 +98,7 @@ li {
 
 .border_li {
 	border-top: 3px solid #22a7f0;
-}
-
+}	
 /* Admin part */
 
 hr {
@@ -130,17 +124,23 @@ hr {
 	border-radius: 10px;
 }
 
+.pad-txt{
+	padding-left: 15px;
+}
+
 input {
+	font-size: 18px;
+}
+
+
+input {
+	font-family: 'Gotham-Rounded-Book';
 	background-color: #446cb3;
 	border: none;
 	color: #ffffff;
 	height: 24px;
 	width: 208px;
 	border-radius: 10px;	
-}
-
-.pad-txt{
-	padding-left: 15px;
 }
 
 input:-webkit-autofill {
@@ -198,6 +198,45 @@ button:hover {
 
 }
 
+.new-crea {
+  	box-shadow: 1px 4px 10px #22313f;
+  	border-radius: 10px;
+  	border-style: solid;
+  	border-color: #22313f;	
+  	font-size: 2.25em;
+	width: 176px;
+	height: 60px;	
+}
+
 .next {
 
 }
+
+/* Custom select */
+
+.custom-select {
+  	padding:4px;
+  	line-height: 21px;
+	color: #ffffff;
+	border-radius: 10px;
+	width: 248px;
+	overflow: hidden;
+	background: url(img/picto/arrow.png) no-repeat right #446cb3;
+	border: 1px #22313f;
+	border-color: #22313f;
+}
+
+.custom {
+	width: 248px;
+	color: #ffffff;
+	border-radius: 10px;
+	overflow: hidden;
+	border: 1px #22313f;
+	border-color: #22313f;
+	background: none;
+	border: none;
+	-webkit-appearance: button;
+	moz-appearance: button;
+}
+
+/* CARD */

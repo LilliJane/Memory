@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
+ 
     <title id="title-doc">Memory Game</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -20,13 +20,15 @@
 
   <body>
   <div class="container">
-  <h1>PARTIE PRÉDÉFINIE</h1>
+  <a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/home.php"><img src="img/picto/decoupe/retour.png"/></a>
+  <h1 style="display: inline-block">PARTIE PRÉDÉFINIE</h1>
   <form action="game.php" method="post" class="new_part">
  
   <div class="row">
     <div class="col-md-3">
        <label for="genre">Thème : </label> <br />
-       <select name="genre" id="genre">
+       <div class="custom-select">
+       <select class="custom" name="genre"id="genre">
           <?php
             $result = $link->query('SELECT * FROM memory_genre');
 
@@ -34,11 +36,13 @@
               echo '<option value=" ' . $memory_genre['id'] . '"> ' . $memory_genre['nom'] . '</option>';
            ?>
        </select>
+       </div>
     </div>
 
     <div class="col-md-3">
-       <label for="level">Niveau scolaire : </label> <br />
-       <select name="level" id="level">
+        <label for="level">Niveau scolaire : </label> <br />
+        <div class="custom-select">
+        <select class="custom" name="level" id="level">
           <?php
             $result = $link->query('SELECT * FROM memory_level');
 
@@ -46,6 +50,7 @@
               echo '<option value=" ' . $memory_level['id'] . '"> ' . $memory_level['nom'] . '</option>';
            ?>
        </select>
+      </div>
     </div>
 
     <div class="col-md-3">
