@@ -13,19 +13,19 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
-   			 $('#hidesplash').fadeIn(3000).removeClass('hidden');
+   			 $('#hidesplash').fadeIn(3500).fadeOut()(2000);
 		});
 	</script>
 	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-	<!--div id="splashscreen">
-		<?php echo '<img src=splach.gif?id=' . date(ymdHis) . ' style="height: 100%; width: 100%; margin-top:-6%"/>';?>
-	</div-->
+	<div id="splashscreen" id="hidesplash">
+		<?php echo '<img src=img/splash.png?id=' . date(ymdHis) . ' style="height: 100%; width: 100%; margin-top:-6%"/>';?>
+	</div>
 
 
-	<div id="hidesplash" class="container text-center col-md-4 col-md-offset-4" style="margin-top: 15%; display:none">
+	<div class="container text-center col-md-4 col-md-offset-4" style="margin-top: 15%; display:none">
 		<h2>Choisissez votre mode de jeu :</h2>
 		<ul> 
   			<a href="http://atelier33.ac-bordeaux.fr/ecolesinfo/Memory/game.php" class="pad_a"><li>PARTIE RAPIDE</li></a>
